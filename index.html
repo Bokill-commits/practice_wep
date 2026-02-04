@@ -34,7 +34,7 @@
         }
 
         button {
-            background-color: #3498db;
+            background-color: #ff0000;
             color: white;
             border: none;
             padding: 10px 16px;
@@ -43,9 +43,22 @@
         }
 
         button:hover {
-            background-color: #2980b9;
+            background-color: #cc0000;
+            transform: translateY(-1px);
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;              
+            margin-top: 15px;
+            flex-wrap: wrap;        
         }
 
+        .button-group button {
+            flex: 1;
+            min-width: 120px;
+        }
+        
         footer {
             text-align: center;
             padding: 15px;
@@ -72,36 +85,51 @@
         </div>
             
          <div class="card">
-                <h3>Delivery Match AI</h3>
+            <h2>Delivery Match AI</h2>
             <p>
-                탁송 기사 AI 매칭 프로젝트 
+                탁송 기사 AI 매칭 팀프로젝트 
             </p>
-            <button onclick="window.open('https://youtu.be/hjLLEnQoe_Q')">
-                Youtube 보기
-            </button>
-        </div>   
-        
+
+            <div class="button-youtube">
+                <button onclick="window.open('https://youtu.be/hjLLEnQoe_Q')">
+                    Youtube
+                </button>
+                 
+                <button class="button-group"
+                        onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
+                    GitHub
+                </button>
+            </div>   
+        </div> 
         <div class="card">
             <h2>DevTools Malware Scanner</h2>
             <p>
-                실시간 악성 코드 감지 프로젝트
+                실시간 악성 코드 감지 팀프로젝트
             </p>
-            <button onclick="window.open('https://youtu.be/Ly1jYo7CWos')">
-                Youtube 보기
-            </button>
+
+            <div class="button-youtube">
+                <button onclick="window.open('https://youtu.be/Ly1jYo7CWos')">
+                    Youtube
+                </button>
+                 
+                <button class="button-group"
+                        onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
+                    GitHub
+                </button>
+            </div>   
         </div>
-            <p>
-                <ul>
+        <p>
+            <ul>
                 <li>항목 1</li>
                 <li>항목 2</li>
-                </ul>
-            </p>
-            <p>
-                <ol>
+            </ul>
+        </p>
+        <p>
+            <ol>
                 <li>첫째 1</li>
                 <li>둘째 2</li>
-                </ol>
-            </p>
+            </ol>
+        </p>
         <p>    
         <a href="https://naver.com">프로젝트발표영상</a>
         </p>
