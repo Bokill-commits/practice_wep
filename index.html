@@ -33,17 +33,37 @@
             margin: 0 auto;
         }
 
-        button {
+        .button-youtube {
             background-color: #ff0000;
             color: white;
             border: none;
             padding: 10px 16px;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.1s ease;
         }
 
-        button:hover {
+        .button-youtube:hover {
             background-color: #cc0000;
+            transform: translateY(-1px);
+        }
+
+        .button-github {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        
+        .button-github:hover {
+            background-color: #1d4ed8;
             transform: translateY(-1px);
         }
         
@@ -96,7 +116,7 @@
                     Youtube
                 </button>
                  
-                <button class="button-group"
+                <button class="button-github"
                         onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
                     GitHub
                 </button>
@@ -114,7 +134,7 @@
                     Youtube
                 </button>
                  
-                <button class="button-group"
+                <button class="button-github"
                         onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
                     GitHub
                 </button>
