@@ -39,43 +39,6 @@
             margin: 0 auto 20px;
         }
 
-        .card-horizontal {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .card-text {
-            flex: 1;
-        }
-
-        .card-img {
-            width: 200px;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .button-youtube,
-        .button-github {
-            border: none;
-            padding: 10px 16px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            color: white;
-        }
-
-        .button-youtube { background-color: #ff0000; }
-        .button-github { background-color: #2563eb; }
-
-        /* 코드 표시용 */
         pre {
             background-color: #111827;
             color: #e5e7eb;
@@ -95,57 +58,16 @@
 </header>
 
 <main>
-
     <section class="projects">
-
         <div class="card">
             <h2>JavaScript Test Code</h2>
 
-            <!-- 👇 화면에 보이게 하는 코드 -->
             <pre><code>
-function test() {
-    a = 3;
-    b = 5;
-    c = a + b;
-    result = `${a} + ${b} = ${a+b}`;
-    alert(result);
-}
-
 function add(n1, n2) {
-    n1 = 4;
-    n2 = 5;
-    n_result = n1 + n2;
-    alert(n_result);
+    result = `${n1} + ${n2} = ${n1+n2}`;
+    alert(result);
 }
             </code></pre>
 
-            <button type="button" onclick="add(n1, n2);">테스트</button>
-        </div>
-
-    </section>
-
-</main>
-
-<footer>
-    © 2026 Daekyu Kang · GitHub Pages
-</footer>
-
-<!-- ✅ 실행용 스크립트 -->
-<script>
-    function test() {
-        a = 3;
-        b = 5;
-        c = a + b;
-        result = `${a} + ${b} = ${a+b}`;
-        alert(result);
-    }
-    function add(n1, n2) // 함수 parameter variables
-    {
-        /* 서식 문자열(Formated String)*/
-        result = ‘${n1} + ${n2} = ${n1+n2}’
-        alert(result);
-    }
-</script>
-
-</body>
-</html>
+            <!-- ✅ 값 직접 전달 -->
+            <button type="button" onclick="add(4, 5
