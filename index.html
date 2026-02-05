@@ -119,11 +119,11 @@ function add(n1, n2) {
         a = parseInt(a)
         b = parseInt(b)
         c = a+b;
-        exp = '${a} + ${b} = ${a+b}'
+        exp = `${a} + ${b} = ${a+b}`
         console.log(exp)
         alert(exp);
         //덧셈된 값 c를 화면의 텍스트 박스에 입력하기
-        //console.log(document.getElementById("n3").value) = c
+        document.getElementById("n3").value = c;
     }
 </script>
 
