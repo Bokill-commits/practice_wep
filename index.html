@@ -88,6 +88,7 @@ function add(n1, n2) {
 
             <!-- ✅ 버튼 확실히 존재 -->
             <button type="button" onclick="add(4, 5);">테스트</button>
+            <button type=”button" onclick=”calculate();">계산</button>
         </div>
     </section>
 </main>
@@ -103,6 +104,10 @@ function add(n1, n2) {
         b = parseInt(n2);
         let result = `${n1} + ${n2} = ${n1 + n2}`;
         alert(result);
+    }
+
+    function calculate() {
+        console.log('계산을 시작합니다');
     }
 </script>
 
