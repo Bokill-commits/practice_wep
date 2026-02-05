@@ -32,7 +32,21 @@
             max-width: 600px;
             margin: 0 auto;
         }
+        
+        .image-row {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+        }
 
+        .img-small  { width: 75px; }
+        .img-medium { width: 150px; }
+        .img-large  { width: 220px; }
+        
+        img {
+            height: auto;
+        }
+        
         .button-youtube {
             background-color: #ff0000;
             color: white;
@@ -138,9 +152,10 @@
         <p>    
             <a href="window.open('https://naver.com')">프로젝트발표영상</a>
         </p>
-        <p>
-            <img src="images/image_good.png" alt="따봉">
-        </p>
+        <div class="image-row">
+            <img src="images/image_good.png" alt="설명" class="img-medium">
+            <img src="images/image_good.png" alt="설명" class="img-small">
+        </div>
     </main>
 
     <footer>
