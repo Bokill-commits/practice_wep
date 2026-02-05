@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daekyu Kang | Portfolio</title>
 
-    <!-- CSS -->
     <style>
         body {
             margin: 0;
@@ -24,47 +23,61 @@
             padding: 20px;
         }
 
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* ===== Card ===== */
         .card {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 20px;
+        }
+
+        .card-horizontal {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .card-text {
+            flex: 1;
         }
 
         .card-img {
-            width: 100%;
-            height: 160px;
+            width: 200px;
+            height: 140px;
             object-fit: cover;
             border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        
-        .image-row {
-                display: flex;
-                gap: 10px;
-                align-items: center;
         }
 
-        .img-small  { width: 75px; }
-        .img-medium { width: 150px; }
-        .img-large  { width: 220px; }
-        
-        img {
-            height: auto;
+        /* ===== Buttons ===== */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
         }
-        
-        .button-youtube {
-            background-color: #ff0000;
-            color: white;
+
+        .button-youtube,
+        .button-github {
             border: none;
             padding: 10px 16px;
             border-radius: 8px;
             cursor: pointer;
             font-size: 14px;
             font-weight: 500;
+            color: white;
             transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .button-youtube {
+            background-color: #ff0000;
         }
 
         .button-youtube:hover {
@@ -74,111 +87,108 @@
 
         .button-github {
             background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 10px 16px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: background-color 0.2s ease, transform 0.1s ease;
         }
-        
+
         .button-github:hover {
             background-color: #1d4ed8;
             transform: translateY(-1px);
         }
-        
-        .button-group {
+
+        /* ===== Image Row ===== */
+        .image-row {
             display: flex;
-            gap: 10px;              
-            margin-top: 15px;
-            flex-wrap: nowrap;        
+            gap: 10px;
+            align-items: center;
+            margin-top: 20px;
         }
-        
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-            color: #777;
-        }
+
+        .img-small { width: 75px; }
+        .img-medium { width: 150px; }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Daekyu Kang | Portfolio</h1>
-        <p>Ai Data Analysis & Developer</p>
-    </header>
-    
-    <main class="layout">
-    
-        <aside class="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Database</li>
-                <li>HTML / CSS</li>
-            </ul>
-        </aside>
-        
-        <section class="projects">
-         <div class="card">
-            <img src="images/delivery_image.png" alt="프로젝트 이미지" class="card-img">
-            <h2>Delivery Match AI</h2>
-            <p>탁송 기사 AI 매칭 팀프로젝트</p>
-            
-            <div class="button-group">
-                <button class="button-youtube"
-                        onclick="window.open('https://youtu.be/hjLLEnQoe_Q')">
-                    Youtube
-                </button>
-                
-                <button class="button-github"
-                        onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
-                    GitHub
-                </button>
-            </div>   
-        </div>
-        <br>
-        <div class="card">
-            <img src="images/malware_img.png" alt="프로젝트 이미지" class="card-img">
-            <h2>DevTools Malware Scanner</h2>
-            <p>실시간 악성 코드 감지 팀프로젝트</p>
-            <div class="button-group">
-                <button class="button-youtube"
-                        onclick="window.open('https://youtu.be/Ly1jYo7CWos')">
-                    Youtube
-                </button>
-                 
-                <button class="button-github"
-                        onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
-                    GitHub
-                </button>
-            </div>   
+<header>
+    <h1>Daekyu Kang | Portfolio</h1>
+    <p>AI Data Analysis & Developer</p>
+</header>
+
+<main>
+
+    <aside class="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Database</li>
+            <li>HTML / CSS</li>
+        </ul>
+    </aside>
+
+    <section class="projects">
+
+        <div class="card card-horizontal">
+            <div class="card-text">
+                <h2>Delivery Match AI</h2>
+                <p>탁송 기사 AI 매칭 팀프로젝트</p>
+
+                <div class="button-group">
+                    <button class="button-youtube"
+                            onclick="window.open('https://youtu.be/hjLLEnQoe_Q')">
+                        Youtube
+                    </button>
+                    <button class="button-github"
+                            onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <img src="images/delivery_image.png"
+                 alt="Delivery Match AI"
+                 class="card-img">
         </div>
 
-        <p>    
-            <a href="window.open('https://naver.com')">프로젝트발표영상</a>
+        <div class="card card-horizontal">
+            <div class="card-text">
+                <h2>DevTools Malware Scanner</h2>
+                <p>실시간 악성 코드 감지 팀프로젝트</p>
+
+                <div class="button-group">
+                    <button class="button-youtube"
+                            onclick="window.open('https://youtu.be/Ly1jYo7CWos')">
+                        Youtube
+                    </button>
+                    <button class="button-github"
+                            onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <img src="images/malware_img.png"
+                 alt="Malware Scanner"
+                 class="card-img">
+        </div>
+
+        <p>
+            <a href="https://naver.com" target="_blank">프로젝트 발표 영상</a>
         </p>
+
         <div class="image-row">
             <img src="images/image_good.png" alt="설명" class="img-medium">
             <img src="images/image_good.png" alt="설명" class="img-small">
         </div>
-    </main>
 
-    <footer>
-        © 2026 Daegyu Kang · GitHub Pages
-    </footer>
+    </section>
 
-    <!-- JavaScript -->
-    <script>
-        function showMessage() {
-            alert("버튼이 클릭되었습니다!");
-        }
-    </script>
+</main>
+
+<footer>
+    © 2026 Daekyu Kang · GitHub Pages
+</footer>
 
 </body>
 </html>
