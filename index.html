@@ -30,7 +30,6 @@
             color: #777;
         }
 
-        /* ===== Card ===== */
         .card {
             background-color: white;
             padding: 20px;
@@ -57,7 +56,6 @@
             border-radius: 8px;
         }
 
-        /* ===== Buttons ===== */
         .button-group {
             display: flex;
             gap: 10px;
@@ -71,39 +69,21 @@
             border-radius: 8px;
             cursor: pointer;
             font-size: 14px;
-            font-weight: 500;
             color: white;
-            transition: background-color 0.2s ease, transform 0.1s ease;
         }
 
-        .button-youtube {
-            background-color: #ff0000;
-        }
+        .button-youtube { background-color: #ff0000; }
+        .button-github { background-color: #2563eb; }
 
-        .button-youtube:hover {
-            background-color: #cc0000;
-            transform: translateY(-1px);
-        }
-
-        .button-github {
-            background-color: #2563eb;
-        }
-
-        .button-github:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-1px);
-        }
-
-        /* ===== Image Row ===== */
-        .image-row {
-            display: flex;
-            gap: 10px;
-            align-items: center;
+        /* 코드 표시용 */
+        pre {
+            background-color: #111827;
+            color: #e5e7eb;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
             margin-top: 20px;
         }
-
-        .img-small { width: 75px; }
-        .img-medium { width: 150px; }
     </style>
 </head>
 
@@ -116,103 +96,57 @@
 
 <main>
 
-    <aside class="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Database</li>
-            <li>HTML / CSS</li>
-        </ul>
-    </aside>
-
     <section class="projects">
 
-        <div class="card card-horizontal">
-            <div class="card-text">
-                <h2>Delivery Match AI</h2>
-                <p>탁송 기사 AI 매칭 팀프로젝트</p>
+        <div class="card">
+            <h2>JavaScript Test Code</h2>
 
-                <div class="button-group">
-                    <button class="button-youtube"
-                            onclick="window.open('https://youtu.be/hjLLEnQoe_Q')">
-                        Youtube
-                    </button>
-                    <button class="button-github"
-                            onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
-                        GitHub
-                    </button>
-                </div>
-            </div>
+            <!-- 👇 화면에 보이게 하는 코드 -->
+            <pre><code>
+function test() {
+    a = 3;
+    b = 5;
+    c = a + b;
+    result = `${a} + ${b} = ${a+b}`;
+    alert(result);
+}
 
-            <img src="images/delivery_image.png"
-                 alt="Delivery Match AI"
-                 class="card-img">
-        </div>
+function add(n1, n2) {
+    n1 = 4;
+    n2 = 5;
+    n_result = n1 + n2;
+    alert(n_result);
+}
+            </code></pre>
 
-        <div class="card card-horizontal">
-            <div class="card-text">
-                <h2>DevTools Malware Scanner</h2>
-                <p>실시간 악성 코드 감지 팀프로젝트</p>
-
-                <div class="button-group">
-                    <button class="button-youtube"
-                            onclick="window.open('https://youtu.be/Ly1jYo7CWos')">
-                        Youtube
-                    </button>
-                    <button class="button-github"
-                            onclick="window.open('https://github.com/Bokill-commits/TeamProject')">
-                        GitHub
-                    </button>
-                </div>
-            </div>
-
-            <img src="images/malware_img.png"
-                 alt="Malware Scanner"
-                 class="card-img">
-        </div>
-
-        <p>
-            <a href="https://naver.com" target="_blank">프로젝트 발표 영상</a>
-        </p>
-
-        <div class="image-row">
-            <img src="images/image_good.png" alt="설명" class="img-medium">
-            <img src="images/image_good.png" alt="설명" class="img-small">
+            <button type="button" onclick="add(4,5);">테스트</button>
         </div>
 
     </section>
-        
-    <head>
-        <script>
-            /* 함수의 선언*/
-            function test() {
-                a = 3;
-                b = 5;
-                c = a + b;
-                //alert(c); // 3 + 5 = 8
-                result = “${a} + ${b} = ${a+b}”;
-                alert(result);
-            }
-            function add(n1, n2)
-            {
-            n1 = 4;
-            n2 = 5;
-            n_result = n1 + n2;
-            alert(n_result);
-            }
-        </script>
-    </head>
 
-    <body>
-        <button type="button" onclick="add(4,5);">테스트</button>
-    </body>
 </main>
 
 <footer>
     © 2026 Daekyu Kang · GitHub Pages
 </footer>
+
+<!-- ✅ 실행용 스크립트 -->
+<script>
+    function test() {
+        a = 3;
+        b = 5;
+        c = a + b;
+        result = `${a} + ${b} = ${a+b}`;
+        alert(result);
+    }
+
+    function add(n1, n2) {
+        n1 = 4;
+        n2 = 5;
+        n_result = n1 + n2;
+        alert(n_result);
+    }
+</script>
 
 </body>
 </html>
