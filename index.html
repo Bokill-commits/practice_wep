@@ -216,43 +216,56 @@ CDE
             
             <fieldset>
                 <legend>당신의 아이디와 암호</legend>
+                <p>
                 아이디<input type="text" name="uid">
                 암 호<input type="password" name="pwd">
+                </p>
             </fieldset>
             
             <fieldset>
                 <legend>좋아하는 과일</legend>
+                <p>
                 사과<input type="checkbox" name="fruits" value="apple">
                 포도<input type="checkbox" name="fruits" value="grape">
                 오렌지<input type="checkbox" name="fruits" value="orange">
+                </p>
             </fieldset>
             
             <fieldset>
                 <legend>당신의 성별</legend>
+                <p>
                 남자<input type="radio" name="gender" value="male">
                 여자<input type="radio" name="gender" value="female">
+                </p>
             </fieldset>
             
             <fieldset>
                     <legend>경력과 점수</legend>
+                    <p>
                     <!— 0에서 100 사이의 숫자를 10 단위로 입력 —>
                     경력<input type="nembur" name="experience" min="0" max="100" step="10" value="50"><br>
                     <!— 0에서 10 사이의 범위를 슬라이더로 조절 —>
                     점수<input type="range" name="credit" min="0" max="10" step="1">
+                    </p>
             </fieldset>
             
             <fieldset>
                 <legend>좋아하는 색상</legend>
+                <p>
                 색상<input type="color" name="user_color" value="#ff0000">
+                </p>
             </fieldset>
             
             <fieldset>
                 <legend>생년월일</legend>
+                <p>
                 <input type="date" id="birth" name="birth">
+                </p>
             </fieldset>
             
             <fieldset>
                 <legend>사용하는 프로그래밍 언어</legend>
+                <p>
                 <select name="Programming_Language[]" multiple size="3">
                     <option value="python">Python</option>
                     <option value="html">HTML</option>
@@ -260,6 +273,7 @@ CDE
                     <option value="javascript">JavaScript</option>
                 </select>
                 ctrl + 좌클릭으로 다중선택
+                </p>
             </fieldset>
             
             <fieldset class="agree-box">
@@ -276,7 +290,7 @@ CDE
                     <input type="checkbox" name="agree">
                     이용약관 동의
                     </label>
-                    <button type="button" onclick="check_form()">전송하기</button>
+                    <button type="button" onclick="check_form()">주소확인</button>
                 </div>
             </fieldset>  
             
