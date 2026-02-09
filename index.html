@@ -120,6 +120,18 @@
             background-color: #1d4ed8;
         }
     </style>
+<script>
+function check_form()
+{
+    email = "hello@abc.com";
+    if !(email.includes('.'))
+    {
+        alert('이메일 주소를 다시 확인해주세요');
+    } else {
+        alert('이메일 주소는 정상입니다');
+    }
+}
+</script>
 </head>
 
 <body>
@@ -220,25 +232,19 @@ CDE
                 </select>
                 ctrl + 좌클릭으로 다중선택
             </fieldset>
-            <form>
-                <fieldset>
+            <fieldset>
                     <legend>이용약관 동의</legend>
-                    <p>
-                        <label for="name">이 름:</label>
-                        <input type="text" id="name" name="name">
-                    </p>
-                    <p>
-                        <label for="email">이메일:</label>
-                        <input type="email" id="email" name="email">
-                    </p>
-                    <p>
-                        <label>
-                        <input type="checkbox" name="agree"> 이용약관 동의
-                        </label>
-                    </p>       
-                    <button type="submit">전송하기</button>
-                </fieldset>
-            </form>    
+                    <label for="name">이 름:</label>
+                    <input type="text" id="name" name="name">
+                
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="email">
+                
+                    <label>
+                    <input type="checkbox" name="agree"> 이용약관 동의
+                    </label>       
+                    <button type="button" onclick="check_form()">전송하기</button>
+            </fieldset>    
             <button type="submit">확인</button>
             <button type="reset">초기화</button>
         </fieldset>
