@@ -120,22 +120,27 @@
             background-color: #1d4ed8;
         }
 
-        .checkbox label {
+        .agree-row {
+            display: grid;
+            grid-template-columns: auto 1fr auto 1fr auto auto;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .agree-row label {
             width: auto;
+            text-align: right;
+        }
+        
+        .agree-row input[type="text"],
+        .agree-row input[type="email"] {
+            width: 150px;
+        }
+        
+        .checkbox {
+            text-align: left;
         }
 
-        .row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .row label {
-            width: 80px;
-            text-align: right;
-            margin-right: 10px;
-        }
-        
     </style>
 <script>
 function check_form()
@@ -258,18 +263,20 @@ CDE
                 ctrl + 좌클릭으로 다중선택
             </fieldset>
             
-            <fieldset>
+            <fieldset class="agree-box">
                 <legend>이용약관 동의</legend>
-                <div class="row">
-                    <label for="name">이 름</label>
+        
+                <div class="agree-row">
+                    <label for="name">이 름:</label>
                     <input type="text" id="name" name="name">
-                </div>
-                <div class="row">
-                    <label for="email">이메일</label>
-                    <input type="email" id="email" name="email"><br>
-                </div>
-                <div class="checkbox label">
-                    <label><input type="checkbox" name="agree">이용약관 동의</label>
+        
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="email">
+        
+                    <label class="checkbox">
+                    <input type="checkbox" name="agree">
+                    이용약관 동의
+                    </label>
                     <button type="button" onclick="check_form()">전송하기</button>
                 </div>
             </fieldset>  
