@@ -123,7 +123,8 @@
 <script>
 function check_form()
 {
-    email = "hello@abc.com";
+    //email = "hello@abc.com";
+    email = document.getElementByld('email').value;
     if (email.includes('.'))
     {
         alert('이메일 주소는 정상입니다');
@@ -190,22 +191,26 @@ CDE
 <div>
     <form>
         <fieldset>
+            
             <fieldset>
                 <legend>당신의 아이디와 암호</legend>
                 아이디<input type="text" name="uid">
                 암 호<input type="password" name="pwd">
             </fieldset>
+            
             <fieldset>
                 <legend>좋아하는 과일</legend>
                 사과<input type="checkbox" name="fruits" value="apple">
                 포도<input type="checkbox" name="fruits" value="grape">
                 오렌지<input type="checkbox" name="fruits" value="orange">
             </fieldset>
+            
             <fieldset>
                 <legend>당신의 성별</legend>
                 남자<input type="radio" name="gender" value="male">
                 여자<input type="radio" name="gender" value="female">
             </fieldset>
+            
             <fieldset>
                     <legend>경력과 점수</legend>
                     <!— 0에서 100 사이의 숫자를 10 단위로 입력 —>
@@ -213,14 +218,17 @@ CDE
                     <!— 0에서 10 사이의 범위를 슬라이더로 조절 —>
                     점수<input type="range" name="credit" min="0" max="10" step="1">
             </fieldset>
+            
             <fieldset>
                 <legend>좋아하는 색상</legend>
                 색상<input type="color" name="user_color" value="#ff0000">
             </fieldset>
+            
             <fieldset>
                 <legend>생년월일</legend>
                 <input type="date" id="birth" name="birth">
             </fieldset>
+            
             <fieldset>
                 <legend>사용하는 프로그래밍 언어</legend>
                 <select name="Programming_Language[]" multiple size="3">
@@ -231,21 +239,24 @@ CDE
                 </select>
                 ctrl + 좌클릭으로 다중선택
             </fieldset>
+            
             <fieldset>
                     <legend>이용약관 동의</legend>
-                    <label for="name">이 름:</label>
+                    <label for="name">이 름</label>
                     <input type="text" id="name" name="name">
                 
-                    <label for="email">이메일:</label>
+                    <label for="email">이메일</label>
                     <input type="email" id="email" name="email">
                 
                     <label>
                     <input type="checkbox" name="agree"> 이용약관 동의
                     </label>       
                     <button type="button" onclick="check_form()">전송하기</button>
-            </fieldset>    
+            </fieldset>  
+            
             <button type="submit">확인</button>
             <button type="reset">초기화</button>
+            
         </fieldset>
     </form>
 </div>
