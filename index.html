@@ -178,8 +178,10 @@ CDE
 <div>
     <form>
         <p>
+        <fieldset>
         아이디<input type="text" name="uid">
         암 호<input type="password" name="pwd">
+        </fieldset>
         <fieldset>
             <legend>좋아하는 과일은?</legend>
             사과<input type="checkbox" name="fruits" value="apple">
@@ -193,6 +195,14 @@ CDE
         </fieldset>
         <button type="submit">확인</button>
         </p>
+    </form>
+</div>
+<div>
+    <form>
+        <!— 0에서 100 사이의 숫자를 10 단위로 입력 —>
+        <input type=”nembur” name=”experience” min=”0” max=”100” step=”10” value=”50”>
+        <!— 0에서 10 사이의 범위를 슬라이더로 조절 —>
+        <input type=”range” min=”0” max=”10” step=”1”>
     </form>
 </div>
 <main>
