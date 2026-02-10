@@ -1,1 +1,6 @@
-
+.calendar {
+    width: 420px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
