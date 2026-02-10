@@ -154,6 +154,21 @@ function check_form() {
     }
 }
 </script>
+<script>
+function openCalendar() {
+    const width = 450;
+    const height = 520;
+    const left = (screen.width - width) / 2;
+    const top = (screen.height - height) / 2;
+
+    window.open(
+        "calendar_practice.html",
+        "calendarPopup",
+        `width=${width},height=${height},left=${left},top=${top},scrollbars=no,resizable=no`
+    );
+}
+</script>
+    
 </head>
 
 <body>
@@ -339,7 +354,7 @@ CDE
 </div>
 <div>
     <p>
-    <a href="calendar_practice.html" target="_blank">2026년 2월 달력 보기 ☜</a>
+    <a href="calendar_practice.html" onclick="openCalendar(); return false;">2026년 2월 달력 보기 ☜</a>
     </p>
 </div>
 <main>
