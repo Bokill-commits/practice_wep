@@ -8,8 +8,13 @@
 
     <style>
     .box {
-      margin: 20px;  /* 외부 간격 */
-      padding: 15px;  /* 내부 간격 */
+        margin: 20px;  /* 외부 간격 */
+        padding: 15px;  /* 내부 간격 */
+        background: lightblue;
+    }
+
+    .container {
+        display: flex;
     }
 
     </style>
@@ -17,8 +22,13 @@
 <body>
 
     <header>
-        <h1>CSS_TEST</h1>
-        <p>테스트</p>
+    <div>
+        <h1>제목테스트<h1>
+    </div>
+    <div class="container">
+        <div class="box">Hello</div>
+        <div class="box">World</div>   
+    </div>
     </header>
 
     <main>
