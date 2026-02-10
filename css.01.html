@@ -7,51 +7,37 @@
 
 
     <style>
-    .title-text {
-        background: #EAEAEA;
-        margin-bottom: 20px;
-        padding: 50px;
-        text-align: center;
-        font-size: 100px;
-        font-family: "Montserrat", sans-serif;
-        border: 3px solid #4C4C4C;
-        color: #191919;
-    }
-        
-    .box {
-        margin: 20px;  /* 외부 간격 */
-        padding: 25px;  /* 내부 간격 */
-        font-size: 30px;
-        font-family: "Noto Sans KR", sans-serif;
-        background: #EAEAEA;
-        border: 1px solid #4C4C4C;
-        color: #191919;
-    }
+        h1{ margin-bottom: 20px; border-bottom: 3px double black;}
 
-    .container {
-        display: flex;
-    }
+        .container { 
+                    diplay:inline-block; 
+                    width: fit-content; 
+                    margin: 0 auto; 
+                  }
+        
+        div { 
+                display:inline-block;
+                width:50px;
+                border:1px solid black;
+                padding:20px;
+                font-weight: bolder;
+            }
+        
+        #div2 { background-color: #ffff00; color: red;}
     </style>
 </head>
 <body>
-
-    <header>
-    <div>
-        <div class="title-text">안녕하세요</div>
+    <h2>CSS 연습</h2>
     </div>
     <div class="container">
-        <div class="box">Hello</div>
-        <div class="box">World</div>   
+        <div>Hello</div>
+        <div id="div2">World</div>
     </div>
-    </header>
-
     <main>
-
+        
     </main>
-
     <footer>
-
+        
     </footer>
-
 </body>
 </html>
