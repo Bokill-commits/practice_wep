@@ -13,7 +13,9 @@
         a[href$="abc.com"] { background-color: pink; }
 
         div>div>a { color: blue; font-size: 25px; font-weight: bold; }
-        div>div>a:hover::before::after { background-color: skyblue; content: "👉 "; content: " ✅"}
+        div>div>a:hover { background-color: skyblue; }
+        div>div>a:hover::before { content: "👉 "; }
+        div>div>a:hover::after { content: " ✅"; }
 
         input:focus { outline: 2px solid blue; }
 
