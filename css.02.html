@@ -23,6 +23,8 @@
         nav>a:nth-of-type(2) { background-color: orange; }
         nav>a:nth-of-type(3) { background-color: yellow; }
         nav>a:nth-of-type(4) { background-color: green; }
+        a#a1:hover::before { content: "👉 "; }
+        a#a1:hover::aftre { content: " ✅"; }
         
         nav+a { background-color: blue; color: white; }
         p+a { background-color: purple; color: white; }
@@ -38,6 +40,7 @@
     <div>
         <div>
             <a>Home</a>    <!—글자색을 파랗게, 마우스를 올리면 배경색을 하늘색으로—>
+            <a id="a1">가상요소 추가하기</a>
         </div>
         <div>
             아이디<input type="text" name="uid"> <!—포커스를 받으면 outline을 파란색으로—>
