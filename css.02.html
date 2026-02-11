@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dk_css_test</title>
+
+
+    <style>
+        ul>li { text-align: left; }
+        a[href^=http:] { background-color: yellow;}
+        a[href*=github] { background-color: skyblue; }
+        a[href$=abc.com] { backgroun-color: pink; }
+    </style>
+</head>
+<body>
+    <main>
+        <ul>
+          <li><a href="http://google.com">Google</a></li>
+          <li><a href="https://github.com">Github</a></li>
+          <li><a href="https://abc.com">ABC News network</a></li>
+        </ul>
+    <div>
+        <div>
+            <a>Home</a>    <!—글자색을 파랗게—>
+        </div>
+        <p>
+            <nav>
+                <a>Python</a>    <!—배경색을 빨강색으로—>
+                <a>html</a>    <!—배경색을 주황색으로—>
+                <a>css</a>    <!—배경색을 노랑색으로—>
+                <a>JavaScript</a>    <!—배경색을 초록색으로—>
+            </nav>
+            <a>Google</a>    <!—배경색을 파랑색으로—>
+        </p>
+        <a>Contact</a>    <!—배경색을 보라색으로—>
+    </div>
+        
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
