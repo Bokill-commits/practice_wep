@@ -17,10 +17,25 @@
         .box {
             width: 200px;
             height: 200px;
-            border: 1px solid red;
+            border: 1px solid black;
             border-radius: 50%;
-            background-color: yellow;
+            background-color: black;
         }
+        
+        .inner-box {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background-color: white;
+          position: absolute;
+        }
+        
+        .color1 { background-color: crimson; }
+        .color2 { background-color: royalblue; }
+        .color3 { background-color: seagreen; }
+        .color4 { background-color: orange; }
+        .color5 { background-color: purple; }
+        .color6 { background-color: teal; }
 
         .container {
             display: flex;
@@ -36,12 +51,24 @@
 <body>
     <main>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box color1">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box color2">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box color3">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box color4">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box color5">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box color6">
+            <div class="inner-box"></div>
+        </div>
     </div>
         
     </main>
