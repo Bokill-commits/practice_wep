@@ -6,11 +6,13 @@
     <title>dk_css_test2</title>
 
 
-    <style>
+    <style>     
         ul>li { text-align: left; }
         a[href^="http:"] { background-color: yellow;}
         a[href*=github] { background-color: skyblue; }
         a[href$="abc.com"] { background-color: pink; }
+        
+        ul.menu>li:first-child a:hover { color: crimson; font-weight: bold; }
 
         div>div>a { color: blue; font-size: 25px; font-weight: bold; }
         div>div>a:hover { background-color: skyblue; }
@@ -33,7 +35,7 @@
 </head>
 <body>
     <main>
-        <ul>
+        <ul class="menu">
           <li><a href="http://google.com">Google</a></li>
           <li><a href="https://github.com">Github</a></li>
           <li><a href="https://abc.com">ABC News network</a></li>
