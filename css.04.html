@@ -6,7 +6,7 @@
     <title>dk_css_test3</title>
 
     <style>
-        body { margin: 0; }
+        .container { margin: 0; }
         
         .top-box { 
             width: 100%;
@@ -19,9 +19,12 @@
         }
 
         .flex-box {
-            
+            display: flex;
+            flex-direction: coloumn;
         }
 
+        .side-box {  } 
+        
         .bottom-box { 
             position: fixed;
             bottom: 0;
@@ -38,15 +41,12 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="top-box"></div>
-    </header>
-    
-<main> 
-    
-</main>
-    <footer>
-        <div class="bottom-box"></div>
-    </footer>
+    <div class="container">
+        <header class="top-box"></header>
+
+        <div class="flex-box"></div> 
+            <div></div>
+    </div>
+    <footer class="bottom-box"></footer>
 </body>
 </html>
