@@ -63,6 +63,12 @@
             overflow-y: auto;
         }
 
+        .center iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
         .bottom-box {
             flex: 0 0 120px;
             background-color: #034159;
@@ -79,10 +85,18 @@
         <header class="top-box"></header>
 
         <div class="flex-box">
-            <aside class="box side"></aside>
-                <a href="css.02.html" target"main-frame">페이지 </a>
-            <main class="box center"></main>
-                <iframe name="main-frame" src="css.02.html">
+            <aside class="box side">
+                <ul class="menu">
+                    <li><a href="https://www.google.com" targer="contentFrame">Google</a></li>
+                    <li><a href="https://www.never.com" targer="contentFrame">Naver</a></li>
+                    <li><a href="https://bokill-commits.github.io/practice_wep/css.03.html" targer="contentFrame">css.03</a></li>
+                </ul>
+            </aside>
+            
+            <main class="box center">
+                <iframe name="main-frame" src="https://bokill-commits.github.io/practice_wep/"></iframe>                
+            </main>
+            
             <aside class="box side"></aside>
         </div>
 
