@@ -9,6 +9,7 @@
         * { 
             margin: 0;
             padding: 0;
+            min-width: 960px;
             box-sizeing: border-box;
         
         }
@@ -37,13 +38,15 @@
         .box { padding: 20px; }
 
         .side {
+            flex-shrink: 0;
             width: 200px;
             background-color: #025951;
         }
 
         .center { 
             flex: 1;
-            background-color: #02735E;           
+            min-width: 480px;
+            background-color: #02735E;
         }
         
         .bottom-box { 
